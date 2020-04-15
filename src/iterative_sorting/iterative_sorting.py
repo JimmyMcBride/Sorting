@@ -1,4 +1,4 @@
-# TO-DO: Complete the selection_sort() function below
+#TO-DO: Complete the selection_sort() function below
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
@@ -10,7 +10,9 @@ def selection_sort(arr):
         # for each element from the current index to the end of the array
         for ele in range(i, len(arr)):
             arr_element = arr[ele]
+            print("array element", arr_element)
             arr_smallest = arr[smallest_index]
+            print("array smallest" ,arr_smallest)
             if arr_element <= arr_smallest:
                 smallest_index = ele
 
@@ -20,7 +22,7 @@ def selection_sort(arr):
     return arr
 
 
-selection_sort([9, 5, 8, 4, 2, 1, 6, 0, 3, 7])
+print(selection_sort([9, 5, 8, 4, 2, 1, 6, 0, 3, 7]))
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
